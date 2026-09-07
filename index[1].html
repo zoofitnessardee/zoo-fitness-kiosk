@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Zoo Fitness Reception</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="home" class="screen active">
+      <img src="zoo-fitness-logo.jpeg" alt="Zoo Fitness logo" class="logo" />
+      <h1>Welcome to Zoo Fitness</h1>
+      <p class="subtitle">How can we help you today?</p>
+
+      <div class="grid">
+        <a class="btn primary" href="https://zoofitness.clubright.co.uk/register">Join Zoo Fitness</a>
+        <button class="btn" data-screen="recurring">Recurring Monthly Membership</button>
+        <button class="btn" data-screen="passes">Day / Week Pass</button>
+        <button class="btn" data-screen="member">I'm Already a Member</button>
+        <button class="btn" data-screen="hours">Opening Hours</button>
+        <button class="btn" data-screen="ask">Ask Zoo Fitness</button>
+        <button class="btn danger" data-screen="staff">Need Staff Help</button>
+      </div>
+
+      <p class="fineprint">Public opening hours may differ from selected member access times.</p>
+    </section>
+
+    <section id="recurring" class="screen">
+      <h2>Recurring Monthly Membership</h2>
+      <p>This membership stores a payment method for future billing. For privacy, we recommend completing this signup on your own device.</p>
+      <div class="price-card">
+        <strong>€35/month</strong>
+        <span>+ €4 initial fee</span>
+      </div>
+      <p>Scan the QR code below with your phone, or tap “Open signup” if you prefer to continue on this iPad.</p>
+      <img class="qr" alt="QR code for Zoo Fitness signup"
+           src="https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=https%3A%2F%2Fzoofitness.clubright.co.uk%2Fregister" />
+      <a class="btn primary" href="https://zoofitness.clubright.co.uk/register">Open signup</a>
+      <button class="btn ghost back">Back</button>
+    </section>
+
+    <section id="passes" class="screen">
+      <h2>Passes & Memberships</h2>
+      <div class="price-list">
+        <div><span>Day pass</span><strong>€10</strong></div>
+        <div><span>1 week</span><strong>€25</strong></div>
+        <div><span>1 month</span><strong>€39</strong></div>
+        <div><span>3 months</span><strong>€100</strong></div>
+        <div><span>6 months</span><strong>€190</strong></div>
+        <div><span>12 months</span><strong>€345</strong></div>
+      </div>
+      <a class="btn primary" href="https://zoofitness.clubright.co.uk/register">Continue to signup</a>
+      <button class="btn ghost back">Back</button>
+    </section>
+
+    <section id="member" class="screen">
+      <h2>Existing Member</h2>
+      <p>Use ClubRight to access your member account, bookings and membership details.</p>
+      <a class="btn primary" href="https://zoofitness.clubright.co.uk/Account/Login">Open member login</a>
+      <button class="btn ghost back">Back</button>
+    </section>
+
+    <section id="hours" class="screen">
+      <h2>Opening Hours</h2>
+      <div class="hours">
+        <p><strong>Monday–Friday</strong><span>6:30am–9:00pm</span></p>
+        <p><strong>Saturday</strong><span>9:00am–4:00pm</span></p>
+        <p><strong>Sunday</strong><span>9:00am–2:00pm</span></p>
+        <p><strong>Bank Holidays</strong><span>9:00am–2:00pm</span></p>
+      </div>
+      <p class="notice">Minimum joining age: <strong>16 years</strong>.</p>
+      <button class="btn ghost back">Back</button>
+    </section>
+
+    <section id="ask" class="screen">
+      <h2>Ask Zoo Fitness</h2>
+      <p>This first version is ready for the AI receptionist to be added next.</p>
+      <div class="ask-box">
+        <p><strong>For now, you can quickly find:</strong></p>
+        <p>Membership prices, opening hours, joining, member login and staff help.</p>
+      </div>
+      <button class="btn ghost back">Back</button>
+    </section>
+
+    <section id="staff" class="screen">
+      <h2>Need Staff Help?</h2>
+      <p>Choose the option that suits you best.</p>
+
+      <button class="btn" data-screen="wait">Wait for a Staff Member</button>
+
+      <button id="whatsappBtn" class="btn">Send a WhatsApp Message</button>
+
+      <button class="btn" data-screen="ring">Use Ring Doorbell</button>
+      <button class="btn ghost back">Back</button>
+    </section>
+
+    <section id="wait" class="screen">
+      <h2>Please Wait Here</h2>
+      <p>A member of the Zoo Fitness team will assist you as soon as possible.</p>
+      <button class="btn ghost back">Back</button>
+    </section>
+
+    <section id="ring" class="screen">
+      <h2>Use the Ring Doorbell</h2>
+      <p>Please press the Ring doorbell at reception to alert a member of staff.</p>
+      <button class="btn ghost back">Back</button>
+    </section>
+
+    <section id="whatsapp" class="screen">
+      <h2>WhatsApp</h2>
+      <p>Enter the Zoo Fitness WhatsApp number in <code>script.js</code> to activate this button.</p>
+      <p class="notice">Suggested message: “Hi Zoo Fitness, I’m at reception and need some help.”</p>
+      <button class="btn ghost back">Back</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
